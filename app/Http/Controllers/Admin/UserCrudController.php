@@ -36,6 +36,19 @@ class UserCrudController extends CrudController
         // TODO: remove setFromDb() and manually define Fields and Columns
         $this->crud->setFromDb();
 
+        $this->crud->addField([
+            'label' => 'Current password',
+            'name' => 'password_alias',
+            'type' => 'text',
+        ]);
+
+        $this->crud->addField([
+            'label' => 'New password',
+            'name' => 'password',
+            'type' => 'password_meter',
+            'value' => '',
+        ]);
+
         // add asterisk for fields that are required in UserRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
