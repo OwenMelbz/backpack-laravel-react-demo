@@ -1,1 +1,1 @@
-console.log('Custom JS loaded');
+require('./fields/PasswordMeter');

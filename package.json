@@ -26,4 +26,8 @@
         "sass": "^1.17.3",
         "sass-loader": "7.*",
         "vue": "^2.5.17"
+    },
+    "dependencies": {
+        "react-password-strength": "^2.3.1"
+    }
 }
