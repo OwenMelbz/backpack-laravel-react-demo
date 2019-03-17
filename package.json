@@ -28,6 +28,7 @@
         "vue": "^2.5.17"
     },
     "dependencies": {
+        "react-easy-state": "^6.1.1",
         "react-password-strength": "^2.3.1"
     }
 }
